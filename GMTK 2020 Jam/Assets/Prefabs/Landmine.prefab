@@ -123,8 +123,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radiusOfTrigger: 0.5
-  startingVelocity: 1
-  timeThrown: 3
+  startingVelocity: 5
+  timeThrown: 0.25
 --- !u!50 &-1549919696053772564
 Rigidbody2D:
   serializedVersion: 4
