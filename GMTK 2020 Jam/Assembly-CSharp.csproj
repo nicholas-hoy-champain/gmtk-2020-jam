@@ -73,6 +73,8 @@
     <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModuleUtils.cs" />
     <Compile Include="Assets\DemonTeleportPower.cs" />
     <Compile Include="Assets\EnemyHealth.cs" />
+    <Compile Include="Assets\LandmineController.cs" />
+    <Compile Include="Assets\LandminePower.cs" />
     <Compile Include="Assets\Scripts\DemonSoulController.cs" />
     <Compile Include="Assets\Scripts\DemonicController.cs" />
     <Compile Include="Assets\Scripts\FaceMouse.cs" />

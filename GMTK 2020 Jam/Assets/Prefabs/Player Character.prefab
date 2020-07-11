@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 116928655}
+  - component: {fileID: 645020955}
   m_Layer: 0
   m_Name: Telefrag
   m_TagString: Untagged
@@ -30,6 +31,20 @@ Transform:
   m_Father: {fileID: 5872561582255707338}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &645020955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 116928654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb2929b45258a3943bdcdc9cc8a01813, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wizardController: {fileID: 5872561582255707340}
+  manaCost: 25
 --- !u!1 &157536413
 GameObject:
   m_ObjectHideFlags: 0
@@ -178,6 +193,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1618533156}
+  - component: {fileID: 1411858158}
   m_Layer: 0
   m_Name: Landmine
   m_TagString: Untagged
@@ -192,13 +208,31 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1618533155}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 5872561582255707338}
-  m_RootOrder: 3
+  m_Father: {fileID: 5872561583563696788}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1411858158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1618533155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f808e6c03662b74ca8049635acb97c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wizardController: {fileID: 5872561582255707340}
+  landminePrefab: {fileID: 1997048359793397801, guid: da2921cda47aada4bbf467552861231a,
+    type: 3}
+  manaCost: 0
+  timeToThrow: 0
+  key: 101
 --- !u!1 &1722792558
 GameObject:
   m_ObjectHideFlags: 0
@@ -227,7 +261,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5872561582255707338}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &943361990565411831
 GameObject:
@@ -259,7 +293,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5872561582255707338}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &3566816349793817905
 MonoBehaviour:
@@ -339,6 +373,7 @@ GameObject:
   - component: {fileID: 5872561582255707333}
   - component: {fileID: 5872561582255707342}
   - component: {fileID: 5872561582255707337}
+  - component: {fileID: 146724151}
   m_Layer: 0
   m_Name: Player Character
   m_TagString: Untagged
@@ -360,7 +395,6 @@ Transform:
   - {fileID: 5872561583563696788}
   - {fileID: 157536414}
   - {fileID: 116928655}
-  - {fileID: 1618533156}
   - {fileID: 1722792559}
   - {fileID: 969801062379564481}
   m_Father: {fileID: 0}
@@ -490,6 +524,25 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!95 &146724151
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5872561582255707332}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4bae060d549401e439f8dae294778c80, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &5872561583388816206
 GameObject:
   m_ObjectHideFlags: 0
@@ -605,6 +658,7 @@ Transform:
   - {fileID: 674258194}
   - {fileID: 343585416}
   - {fileID: 848522296}
+  - {fileID: 1618533156}
   m_Father: {fileID: 5872561582255707338}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
