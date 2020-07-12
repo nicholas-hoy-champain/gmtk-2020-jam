@@ -81,6 +81,7 @@
     <Compile Include="Assets\MeleeEnemy.cs" />
     <Compile Include="Assets\NormalShieldPower.cs" />
     <Compile Include="Assets\PowerUp.cs" />
+    <Compile Include="Assets\QuitToMenu.cs" />
     <Compile Include="Assets\Scripts\AbsorbPowerScript.cs" />
     <Compile Include="Assets\Scripts\DemonSoulController.cs" />
     <Compile Include="Assets\Scripts\DemonTeleportPower.cs" />
