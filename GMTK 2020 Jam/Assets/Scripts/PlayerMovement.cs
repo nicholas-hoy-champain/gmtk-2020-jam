@@ -34,7 +34,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (!wc.possessed)
+        if (!wc.possessed && !wc.normalShielding)
             rb.velocity = move * baseSpeed * speedMultiplier;
         else
         {
@@ -42,6 +42,11 @@ public class PlayerMovement : MonoBehaviour
                 spriteRenderer.flipX = false;
             else if (rb.velocity.x < 0)
                 spriteRenderer.flipX = true;
+        }
+
+        if (wc.normalShielding)
+        {
+            rb.velocity = Vector2.zero;
         }
     }
 }

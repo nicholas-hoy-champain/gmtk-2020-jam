@@ -15,17 +15,20 @@ public class DemonSoulController : MonoBehaviour
     public GainPowerPrompt powerGain = GainPowerPrompt.none;
     public float timeToLive = 10f;
     private float startingTime;
+    private SpriteRenderer sr;
 
     // Start is called before the first frame update
     void Start()
     {
         startingTime = timeToLive;
+        sr = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
     void Update()
     {
         timeToLive -= Time.deltaTime;
+        sr.color = new Color(sr.color.r, sr.color.g, sr.color.b, timeToLive / startingTime);
         if(timeToLive <= 0)
         {
             Destroy(this.gameObject);

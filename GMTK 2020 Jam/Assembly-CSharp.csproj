@@ -63,7 +63,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\AbsorbPowerScript.cs" />
+    <Compile Include="Assets\ClawPower.cs" />
+    <Compile Include="Assets\ClawSpawn.cs" />
     <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModuleAudio.cs" />
     <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModulePhysics.cs" />
     <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModulePhysics2D.cs" />
@@ -71,19 +72,28 @@
     <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModuleUI.cs" />
     <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModuleUnityVersion.cs" />
     <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModuleUtils.cs" />
-    <Compile Include="Assets\DemonTeleportPower.cs" />
-    <Compile Include="Assets\EnemyHealth.cs" />
-    <Compile Include="Assets\LandmineController.cs" />
-    <Compile Include="Assets\LandminePower.cs" />
+    <Compile Include="Assets\DemonShieldPower.cs" />
+    <Compile Include="Assets\DoorController.cs" />
+    <Compile Include="Assets\EnemyHitBox.cs" />
+    <Compile Include="Assets\MeleeEnemy.cs" />
+    <Compile Include="Assets\NormalShieldPower.cs" />
+    <Compile Include="Assets\Scripts\AbsorbPowerScript.cs" />
     <Compile Include="Assets\Scripts\DemonSoulController.cs" />
+    <Compile Include="Assets\Scripts\DemonTeleportPower.cs" />
     <Compile Include="Assets\Scripts\DemonicController.cs" />
+    <Compile Include="Assets\Scripts\EnemyHealth.cs" />
     <Compile Include="Assets\Scripts\FaceMouse.cs" />
     <Compile Include="Assets\Scripts\FacePosition.cs" />
+    <Compile Include="Assets\Scripts\LandmineController.cs" />
+    <Compile Include="Assets\Scripts\LandminePower.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\RoomManager.cs" />
+    <Compile Include="Assets\Scripts\SwingAttack.cs" />
+    <Compile Include="Assets\Scripts\SwingPowerScript.cs" />
+    <Compile Include="Assets\Scripts\UIBars.cs" />
     <Compile Include="Assets\Scripts\WizardController.cs" />
-    <Compile Include="Assets\SwingAttack.cs" />
-    <Compile Include="Assets\SwingPowerScript.cs" />
-    <Compile Include="Assets\UIBars.cs" />
+    <Compile Include="Assets\SpikesController.cs" />
+    <Compile Include="Assets\TeleportExplosionController.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
@@ -282,6 +292,9 @@
     </Reference>
     <Reference Include="DOTween">
       <HintPath>C:/Users/Nicho/Documents/Champlain/Production 1/Repositories/gmtk-2020-jam/GMTK 2020 Jam/Assets/Demigiant/DOTween/DOTween.dll</HintPath>
+    </Reference>
+    <Reference Include="Pathfinding.Ionic.Zip.Reduced">
+      <HintPath>C:/Users/Nicho/Documents/Champlain/Production 1/Repositories/gmtk-2020-jam/GMTK 2020 Jam/Assets/AstarPathfindingProject/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.3f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -710,7 +723,20 @@
       <HintPath>C:/Users/Nicho/Documents/Champlain/Production 1/Repositories/gmtk-2020-jam/GMTK 2020 Jam/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
-  <ItemGroup></ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="AstarPathfindingProject.csproj">
+      <Project>{668B2238-0F97-2003-9078-AC343AD08285}</Project>
+      <Name>AstarPathfindingProject</Name>
+    </ProjectReference>
+    <ProjectReference Include="PackageToolsEditor.csproj">
+      <Project>{1A5999AD-0435-A296-BADC-926CD3D73340}</Project>
+      <Name>PackageToolsEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="AstarPathfindingProjectEditor.csproj">
+      <Project>{D2FEEE2B-2445-8E0F-7679-9ECA38000E97}</Project>
+      <Name>AstarPathfindingProjectEditor</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

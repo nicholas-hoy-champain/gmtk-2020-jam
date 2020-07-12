@@ -1,6 +1,8 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class WizardController : MonoBehaviour
 {
@@ -21,6 +23,11 @@ public class WizardController : MonoBehaviour
     public float timeCorrupted;
     public float normalBaseTime;
     public float timeNormal;
+    public float invincibilityBaseTime;
+    public float timeInvincible;
+
+    public bool demonShielding;
+    public bool normalShielding;
 
     private SpriteRenderer spriteRenderer;
     private Rigidbody2D rb;
@@ -45,6 +52,11 @@ public class WizardController : MonoBehaviour
         RegenMana();
         animator.SetBool("Possessed", possessed);
         animator.SetBool("Moving", rb.velocity.magnitude > 0.1f);
+
+        if (timeInvincible > 0)
+        {
+            timeInvincible -= Time.deltaTime;
+        }
 
         if (!possessed)
         {
@@ -89,6 +101,9 @@ public class WizardController : MonoBehaviour
 
     void CorruptInitiate()
     {
+        busy = false;
+        normalShielding = false;
+        demonShielding = false;
         possessed = true;
         timeCorrupted = corruptionBaseTime * (1 + corruptionLevel);
         spriteRenderer.sprite = demonicSprite;
@@ -117,5 +132,33 @@ public class WizardController : MonoBehaviour
             default:
                 break;
         }
+    }
+
+
+    public void TakeDamage(float damage, Transform orgin)
+    {
+
+        if (timeInvincible <= 0 && !demonShielding && NotShielded(orgin))
+        { 
+            health -= damage;
+            timeInvincible = invincibilityBaseTime;
+            Camera.main.DOShakePosition(invincibilityBaseTime,2,5,90,true);
+        }
+
+    }
+
+    bool NotShielded(Transform orgin)
+    {
+        if (orgin == null || !normalShielding) 
+            return true;
+
+        Vector2 pos = Input.mousePosition;
+        pos = Camera.main.ScreenToWorldPoint(pos);
+        Vector2 distanceFrom = orgin.position - transform.position;
+        Vector2 direction = pos - new Vector2(transform.position.x,transform.position.y);
+
+        float distanceOff = Mathf.Min(Mathf.Abs(Vector2.Angle(distanceFrom, direction)), Mathf.Abs(Vector2.Angle(direction, distanceFrom)));
+
+        return distanceOff > 50/2;
     }
 }
