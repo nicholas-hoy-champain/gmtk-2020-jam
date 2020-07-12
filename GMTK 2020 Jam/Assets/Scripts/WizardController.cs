@@ -142,7 +142,7 @@ public class WizardController : MonoBehaviour
         { 
             health -= damage;
             timeInvincible = invincibilityBaseTime;
-            Camera.main.DOShakePosition(invincibilityBaseTime,2,5,90,true);
+            Camera.main.DOShakePosition(invincibilityBaseTime/2.0f,1,5,40,true);
         }
 
     }
