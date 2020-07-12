@@ -96,11 +96,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99cc86f38d495664e99270a625dcef16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthIncrease: 2
+  healthIncrease: 8
   manaIncrease: 6
   corruptionIncrease: 0.5
   powerGain: -1
-  timeToLive: 5
+  timeToLive: 10
 --- !u!95 &382116605022834366
 Animator:
   serializedVersion: 3

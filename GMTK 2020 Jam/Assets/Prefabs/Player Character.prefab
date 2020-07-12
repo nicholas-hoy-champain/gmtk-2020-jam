@@ -487,6 +487,49 @@ MonoBehaviour:
   wizardController: {fileID: 5872561582255707340}
   manaCost: 15
   timeShield: 1.5
+--- !u!1 &416152542280960075
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3398327588700151082}
+  - component: {fileID: 2100841565}
+  m_Layer: 0
+  m_Name: DemonAim
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3398327588700151082
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 416152542280960075}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5872561582255707338}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2100841565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 416152542280960075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 238025e674b26f24c86f3595324aeeae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &943361990565411831
 GameObject:
   m_ObjectHideFlags: 0
@@ -622,6 +665,7 @@ Transform:
   - {fileID: 116928655}
   - {fileID: 1722792559}
   - {fileID: 969801062379564481}
+  - {fileID: 3398327588700151082}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -648,10 +692,12 @@ MonoBehaviour:
   currentMana: 10
   manaRegenPerSecond: 1
   corruptionLevel: 0
-  corruptionBaseTime: 0.53
+  corruptionBaseTime: 3
   timeCorrupted: 0
   normalBaseTime: 7
   timeNormal: 5
+  invincibilityBaseTime: 0.3
+  timeInvincible: 0
   demonShielding: 0
   normalShielding: 0
 --- !u!114 &5872561582255707343
@@ -666,6 +712,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b9e5d239cf61e24888e6399c3425722, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  manaPerSecondMultiplier: 2
+  closest: {x: 0, y: 0, z: 0}
+  demonAim: {fileID: 416152542280960075}
+  spawnableObject:
+  - {fileID: 1997048359793397801, guid: da2921cda47aada4bbf467552861231a, type: 3}
+  - {fileID: 1654721986259301770, guid: d11f3f8864557834cbf945724956df70, type: 3}
+  - {fileID: 3780866704181296222, guid: 96345e6846c2c3b43a7749dde83b0c2a, type: 3}
+  - {fileID: 9108197611333053550, guid: 19805371a70354c45a2c5e264e489448, type: 3}
+  timeBetweenAttacks: 1
 --- !u!212 &5872561582255707333
 SpriteRenderer:
   m_ObjectHideFlags: 0

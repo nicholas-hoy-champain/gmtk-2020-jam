@@ -51,7 +51,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74850cc1cc7d76141b25d0e5436054be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 0
+  health: 3
   demonSoulPrefab: {fileID: 382116605022834367, guid: 2762c892094bff845a6e493d61b7aaed,
     type: 3}
 --- !u!61 &4604945465048427753
@@ -247,9 +247,9 @@ MonoBehaviour:
   targetCompatibility: {fileID: 0}
   maxAcceleration: -2.5
   rotationSpeed: 360
-  slowdownDistance: 0.92
+  slowdownDistance: 1.5
   pickNextWaypointDist: 1.2
-  endReachedDistance: 0.74
+  endReachedDistance: 1
   alwaysDrawGizmos: 1
   slowWhenNotFacingTarget: 1
   whenCloseToDestination: 0

@@ -102,8 +102,6 @@ public class WizardController : MonoBehaviour
     void CorruptInitiate()
     {
         busy = false;
-        normalShielding = false;
-        demonShielding = false;
         possessed = true;
         timeCorrupted = corruptionBaseTime * (1 + corruptionLevel);
         spriteRenderer.sprite = demonicSprite;
