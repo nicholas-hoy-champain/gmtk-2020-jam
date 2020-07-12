@@ -2,10 +2,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using DG.Tweening;
 
 public class WizardController : MonoBehaviour
 {
+    public GameObject[] powers;
+    public Image[] powerIcon;
+
     public Sprite normalSprite;
     public Sprite demonicSprite;
 

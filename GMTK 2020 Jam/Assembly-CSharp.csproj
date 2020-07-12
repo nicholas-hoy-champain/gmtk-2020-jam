@@ -63,6 +63,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\BlobEnemy.cs" />
     <Compile Include="Assets\ClawPower.cs" />
     <Compile Include="Assets\ClawSpawn.cs" />
     <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModuleAudio.cs" />
@@ -75,8 +76,11 @@
     <Compile Include="Assets\DemonShieldPower.cs" />
     <Compile Include="Assets\DoorController.cs" />
     <Compile Include="Assets\EnemyHitBox.cs" />
+    <Compile Include="Assets\EnemyProjectileController.cs" />
+    <Compile Include="Assets\MainMenu.cs" />
     <Compile Include="Assets\MeleeEnemy.cs" />
     <Compile Include="Assets\NormalShieldPower.cs" />
+    <Compile Include="Assets\PowerUp.cs" />
     <Compile Include="Assets\Scripts\AbsorbPowerScript.cs" />
     <Compile Include="Assets\Scripts\DemonSoulController.cs" />
     <Compile Include="Assets\Scripts\DemonTeleportPower.cs" />

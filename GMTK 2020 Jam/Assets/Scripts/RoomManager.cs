@@ -161,7 +161,15 @@ public class RoomManager : MonoBehaviour
         if (!newRoom.spawned)
         {
             Instantiate(newRoom.layout, new Vector3(newCameraPos.x, newCameraPos.y, 0), Camera.main.transform.rotation);
-            newRoom.spawned = true;
+
+            for (int i = 0; i < rooms.Length; i++)
+            {
+                if (rooms[i].coords == newRoom.coords)
+                {
+                    rooms[i].spawned = true;
+                    break;
+                }
+            }
         }
     }
 }
