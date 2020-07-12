@@ -160,7 +160,7 @@ public class RoomManager : MonoBehaviour
 
         if (!newRoom.spawned)
         {
-            Instantiate(newRoom.layout, Camera.main.transform.position, Camera.main.transform.rotation);
+            Instantiate(newRoom.layout, new Vector3(newCameraPos.x, newCameraPos.y, 0), Camera.main.transform.rotation);
             newRoom.spawned = true;
         }
     }
