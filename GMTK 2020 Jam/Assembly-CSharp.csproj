@@ -75,6 +75,7 @@
     <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModuleUtils.cs" />
     <Compile Include="Assets\DemonShieldPower.cs" />
     <Compile Include="Assets\DoorController.cs" />
+    <Compile Include="Assets\EndRoom.cs" />
     <Compile Include="Assets\EnemyHitBox.cs" />
     <Compile Include="Assets\EnemyProjectileController.cs" />
     <Compile Include="Assets\MainMenu.cs" />

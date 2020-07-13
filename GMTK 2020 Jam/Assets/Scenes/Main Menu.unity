@@ -204,7 +204,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &210541888
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2187,7 +2187,23 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: TBD
+  m_text: 'Move: WASD
+
+    Swipe: LeftClick
+
+    Absorb: RightClick
+
+    Shield:
+    LShift
+
+    Demon Shield: Space
+
+    Pentatrap: E
+
+    Telefrag: Q
+
+    Shadow
+    Claw: R'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 766be7de800691547bbd246243a747fc, type: 2}
   m_sharedMaterial: {fileID: 7049314575156305863, guid: 766be7de800691547bbd246243a747fc,
@@ -2216,7 +2232,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 659
+  m_fontSize: 75.4
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2257,12 +2273,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1729906572}
-    characterCount: 3
+    characterCount: 121
     spriteCount: 0
-    spaceCount: 0
-    wordCount: 1
+    spaceCount: 17
+    wordCount: 18
     linkCount: 0
-    lineCount: 1
+    lineCount: 8
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0

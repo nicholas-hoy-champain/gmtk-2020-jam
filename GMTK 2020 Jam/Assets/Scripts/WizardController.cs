@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
+using UnityEngine.SceneManagement;
 
 public class WizardController : MonoBehaviour
 {
@@ -145,6 +146,10 @@ public class WizardController : MonoBehaviour
             health -= damage;
             timeInvincible = invincibilityBaseTime;
             Camera.main.DOShakePosition(invincibilityBaseTime/2.0f,1,5,40,true);
+            if(health <= 0)
+            {
+                SceneManager.LoadScene(2);
+            }
         }
 
     }
