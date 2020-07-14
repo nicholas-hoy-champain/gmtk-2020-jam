@@ -92,6 +92,7 @@
     <Compile Include="Assets\Scripts\FacePosition.cs" />
     <Compile Include="Assets\Scripts\LandmineController.cs" />
     <Compile Include="Assets\Scripts\LandminePower.cs" />
+    <Compile Include="Assets\Scripts\PixelGrid.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\RoomManager.cs" />
     <Compile Include="Assets\Scripts\SwingAttack.cs" />

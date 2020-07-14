@@ -573,7 +573,7 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 3
+  - m_ConditionMode: 6
     m_ConditionEvent: Cardinal Direction
     m_EventTreshold: 2
   m_DstStateMachine: {fileID: 0}
@@ -1180,7 +1180,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: playeLeftMove
+  m_Name: playerLeftMove
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -1311,7 +1311,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: playeLeftIdle
+  m_Name: playerLeftIdle
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -2480,7 +2480,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: playeLeftMoveCorrupt
+  m_Name: playerLeftMoveCorrupt
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
