@@ -14,6 +14,18 @@ TextureImporter:
   - first:
       213: 8621616134914898876
     second: DemonAttack_3
+  - first:
+      213: -127690645471005474
+    second: DemonAttack_0
+  - first:
+      213: -8793109498122891539
+    second: DemonAttack_1
+  - first:
+      213: -232758569007185841
+    second: DemonAttack_2
+  - first:
+      213: -5999357885388934094
+    second: DemonAttack_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -125,8 +137,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d0167ce8143e82570800000000000000
-      internalID: 8442247372213805325
+      spriteID: ed47f83d80a5a3ef0800000000000000
+      internalID: -127690645471005474
       vertices: []
       indices: 
       edges: []
@@ -146,8 +158,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e14b53fe7d8304f20800000000000000
-      internalID: 3404783818374493214
+      spriteID: dee8545df7998f580800000000000000
+      internalID: -8793109498122891539
       vertices: []
       indices: 
       edges: []
@@ -167,8 +179,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 08aa37c40d2e3b100800000000000000
-      internalID: 122690999132859008
+      spriteID: f4006ef805315ccf0800000000000000
+      internalID: -232758569007185841
       vertices: []
       indices: 
       edges: []
@@ -188,8 +200,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cbbf067023226a770800000000000000
-      internalID: 8621616134914898876
+      spriteID: 23434f80acffdbca0800000000000000
+      internalID: -5999357885388934094
       vertices: []
       indices: 
       edges: []

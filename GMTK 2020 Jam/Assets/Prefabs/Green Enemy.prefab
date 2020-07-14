@@ -33,7 +33,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4604945465048427764}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.4301729, y: 0.1190356, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -54,6 +54,7 @@ MonoBehaviour:
   health: 3
   demonSoulPrefab: {fileID: 382116605022834367, guid: 2762c892094bff845a6e493d61b7aaed,
     type: 3}
+  HitIndicatorTime: 0
   material:
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   - {fileID: 7049314575156305863, guid: 766be7de800691547bbd246243a747fc, type: 2}
