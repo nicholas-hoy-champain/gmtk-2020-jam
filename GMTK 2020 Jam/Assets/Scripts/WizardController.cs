@@ -166,6 +166,6 @@ public class WizardController : MonoBehaviour
 
         float distanceOff = Mathf.Min(Mathf.Abs(Vector2.Angle(distanceFrom, direction)), Mathf.Abs(Vector2.Angle(direction, distanceFrom)));
 
-        return distanceOff > 50/2;
+        return distanceOff > 45;
     }
 }
