@@ -41,7 +41,7 @@ public class SwingPowerScript : MonoBehaviour
         wizardController.currentMana -= manaCost;
         wizardController.busy = true;
         Instantiate(swungObject, transform.position, transform.rotation);
-        yield return timeToSwing;
+        yield return new WaitForSeconds(timeToSwing);
         wizardController.busy = false;
     }
 }

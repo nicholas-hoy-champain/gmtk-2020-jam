@@ -681,6 +681,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 377e022a5bf20ad4b9aec7ecd1305cd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  powers: []
+  powerIcon: []
   normalSprite: {fileID: 21300000, guid: eff5301183b9ed34e95d3618bd9df99f, type: 3}
   demonicSprite: {fileID: 21300000, guid: e38d49aca21b32048acf71f9b4e1e7a0, type: 3}
   pointingIndicator: {fileID: 5872561583388816204}
@@ -721,6 +723,7 @@ MonoBehaviour:
   - {fileID: 3780866704181296222, guid: 96345e6846c2c3b43a7749dde83b0c2a, type: 3}
   - {fileID: 9108197611333053550, guid: 19805371a70354c45a2c5e264e489448, type: 3}
   timeBetweenAttacks: 1
+  time: 0
 --- !u!212 &5872561582255707333
 SpriteRenderer:
   m_ObjectHideFlags: 0

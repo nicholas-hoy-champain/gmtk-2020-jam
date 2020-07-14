@@ -10,13 +10,13 @@ public class EnemyHealth : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void TakeDamage(float damage)
@@ -24,7 +24,10 @@ public class EnemyHealth : MonoBehaviour
         health -= damage;
         if (health <= 0)
         {
-            Instantiate(demonSoulPrefab, transform.position, transform.rotation);
+            if (!GameObject.FindObjectOfType<WizardController>().possessed)
+            {
+                Instantiate(demonSoulPrefab, transform.position, transform.rotation);
+            }
             Destroy(this.gameObject);
         }
     }
