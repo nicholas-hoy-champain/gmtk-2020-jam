@@ -57,7 +57,7 @@ MonoBehaviour:
   HitIndicatorTime: 0
   material:
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  - {fileID: 7049314575156305863, guid: 766be7de800691547bbd246243a747fc, type: 2}
+  - {fileID: 2100000, guid: b9d476d601b863644a1f7596fe421323, type: 2}
 --- !u!61 &4604945465048427753
 BoxCollider2D:
   m_ObjectHideFlags: 0

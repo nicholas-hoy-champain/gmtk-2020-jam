@@ -20,8 +20,12 @@ public class PowerUp : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        GameObject.FindObjectOfType<WizardController>().powers[type].SetActive(true);
-        GameObject.FindObjectOfType<WizardController>().powerIcon[type].color = new Color(GameObject.FindObjectOfType<WizardController>().powerIcon[type].color.r, GameObject.FindObjectOfType<WizardController>().powerIcon[type].color.g, GameObject.FindObjectOfType<WizardController>().powerIcon[type].color.b,1);
-        Destroy(this.gameObject);
+        if (collision.tag == "Player")
+        {
+            GameObject.FindObjectOfType<WizardController>().powers[type].SetActive(true);
+            GameObject.FindObjectOfType<WizardController>().powerIcon[type].color = new Color(GameObject.FindObjectOfType<WizardController>().powerIcon[type].color.r, GameObject.FindObjectOfType<WizardController>().powerIcon[type].color.g, GameObject.FindObjectOfType<WizardController>().powerIcon[type].color.b, 1);
+            Destroy(this.gameObject);
+        }
+        
     }
 }

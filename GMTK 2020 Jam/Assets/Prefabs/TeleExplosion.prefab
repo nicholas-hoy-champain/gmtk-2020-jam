@@ -97,7 +97,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 0.5
-  radius: 1.5
+  radius: 0.5
 --- !u!95 &9108197611333053545
 Animator:
   serializedVersion: 3

@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a5b95b6e47b1804daaffdee31579e6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  max: 3
+  max: 1.5
   min: 0.5
   loogiePrefab: {fileID: 8484284445822114479, guid: 5915832473ad0524bab48dcd49321408,
     type: 3}
@@ -121,7 +121,7 @@ MonoBehaviour:
   HitIndicatorTime: 0
   material:
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  - {fileID: 7049314575156305863, guid: 766be7de800691547bbd246243a747fc, type: 2}
+  - {fileID: 2100000, guid: b9d476d601b863644a1f7596fe421323, type: 2}
 --- !u!114 &5058174358486962903
 MonoBehaviour:
   m_ObjectHideFlags: 0

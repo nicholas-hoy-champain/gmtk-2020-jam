@@ -6,6 +6,7 @@ public class EnemyProjectileController : MonoBehaviour
 {
     public float damage;
     public float speed;
+    public float lifespan;
 
     // Start is called before the first frame update
     void Start()
@@ -21,5 +22,11 @@ public class EnemyProjectileController : MonoBehaviour
         }
 
         Destroy(this.gameObject);
+    }
+    private void Update()
+    {
+        lifespan -= Time.deltaTime;
+        if (lifespan <= 0)
+            Destroy(this.gameObject);
     }
 }

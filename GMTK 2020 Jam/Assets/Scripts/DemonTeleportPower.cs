@@ -33,8 +33,9 @@ public class DemonTeleportPower : MonoBehaviour
 
     bool PointerIsInRoom()
     {
-        //TODO
-        return true;
+        Vector2 pos = Input.mousePosition;
+        pos = Camera.main.ScreenToWorldPoint(pos);
+        return (pos.x < Camera.main.transform.position.x + 6.4 && pos.x > Camera.main.transform.position.x - 6.4) && (pos.y < Camera.main.transform.position.y + 3.4 && pos.y > Camera.main.transform.position.y - 3.4);
     }
 
     void Teleport()
