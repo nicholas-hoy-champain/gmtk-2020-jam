@@ -111634,7 +111634,7 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: d9e1e8b6af915ff4aa9ba0b2ad371430, type: 2}
     - target: {fileID: 645020955, guid: 3bd8f117a5477a3408f648e880717561, type: 3}
       propertyPath: manaCost
-      value: 0
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 674258195, guid: 3bd8f117a5477a3408f648e880717561, type: 3}
       propertyPath: manaCost

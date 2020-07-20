@@ -1689,8 +1689,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.13, y: 0.125}
   m_AnchorMax: {x: 0.87, y: 0.75}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -39, y: 0}
+  m_SizeDelta: {x: 52.93445, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1729906572
 MonoBehaviour:
@@ -1715,19 +1715,21 @@ MonoBehaviour:
 
     Swipe: LeftClick
 
-    Absorb: RightClick
+    Absorb: RightClick [Absorbs souls]
 
     Shield:
-    LShift
+    LShift [Blocks attacks]
 
-    Demon Shield: Space
+    (Locked) Demon Shield: Space [Blocks attacks around
+    you
 
-    Pentatrap: E
+    (Locked) Pentatrap: E [Kills enemies in a radius]
 
-    Telefrag: Q
+    (Locked) Telefrag:
+    Q [Teleports to mouse position and kills]
 
-    Shadow
-    Claw: R'
+    (Locked) Shadow Claw: R [Stronger
+    Swipe]'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 766be7de800691547bbd246243a747fc, type: 2}
   m_sharedMaterial: {fileID: 7049314575156305863, guid: 766be7de800691547bbd246243a747fc,
@@ -1756,7 +1758,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 75.4
+  m_fontSize: 73
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1797,10 +1799,10 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1729906572}
-    characterCount: 121
+    characterCount: 302
     spriteCount: 0
-    spaceCount: 17
-    wordCount: 18
+    spaceCount: 42
+    wordCount: 43
     linkCount: 0
     lineCount: 8
     pageCount: 1
