@@ -381,6 +381,13 @@
         "com.unity.modules.jsonserialize": "1.0.0",
         "com.unity.modules.subsystems": "1.0.0"
       }
+    },
+    "com.virtualmaker.buildalon": {
+      "version": "1.0.2",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://package.openupm.com"
     }
   }
 }
